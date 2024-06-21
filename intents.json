@@ -1,0 +1,88 @@
+{
+  "intents": [
+      {
+          "tag": "cumprimento",
+          "patterns": ["Oi", "Olá", "E aí", "Oi tudo bem?", "Bom dia", "Boa tarde", "Boa noite"],
+          "responses": ["Olá! Como posso te ajudar?", "Oi! Em que posso ser útil?", "E aí! Em que posso te ajudar?", "Bom dia! Como posso ajudar?", "Boa tarde! Em que posso ser útil?", "Boa noite! O que você precisa?"],
+          "context": [""]
+      },
+      {
+          "tag": "despedida",
+          "patterns": ["Tchau", "Até mais", "Até logo", "Adeus"],
+          "responses": ["Até mais! Espero ter ajudado.", "Tchau! Volte sempre.", "Até logo! Estou aqui se precisar.", "Adeus! Tenha um bom dia."],
+          "context": [""]
+      },
+      {
+          "tag": "agradecimento",
+          "patterns": ["Obrigado", "Obrigada", "Valeu", "Agradecido"],
+          "responses": ["De nada!", "Não há de quê.", "Estou aqui para ajudar.", "Sempre às ordens."],
+          "context": [""]
+      },
+      {
+          "tag": "ajuda",
+          "patterns": ["Ajuda", "Preciso de ajuda", "Pode me ajudar?"],
+          "responses": ["Claro! Como posso te auxiliar?", "Estou aqui para ajudar. O que você precisa?", "Em que posso te ajudar hoje?"],
+          "context": [""]
+      },
+      {
+          "tag": "idade",
+          "patterns": ["Quantos anos você tem?", "Qual a sua idade?", "Idade"],
+          "responses": ["Eu sou apenas um programa de computador, não tenho idade.", "Não tenho idade. Sou um software.", "Não tenho idade. Sou um chatbot."],
+          "context": [""]
+      },
+      {
+          "tag": "piada",
+          "patterns": ["Conte uma piada", "Você sabe alguma piada?", "Piada"],
+          "responses": ["Por que o pombo atravessou a rua? Para mostrar que não era galinha!", "Qual é o cúmulo da burrice? Jogar papel no lixo e achar que está contribuindo com a reciclagem!", "Por que o livro de matemática não pode ser um herói? Porque ele tem muitos problemas."],
+          "context": [""]
+      },
+      {
+          "tag": "agradecimento_piada",
+          "patterns": ["Obrigado pela piada", "Foi engraçado", "Obrigada pela piada"],
+          "responses": ["Que bom que gostou!", "Disponha!", "Fico feliz que tenha gostado."],
+          "context": [""]
+      },
+      {
+          "tag": "nome",
+          "patterns": ["Qual o seu nome?", "Você tem um nome?", "Nome"],
+          "responses": ["Eu sou apenas um chatbot. Não tenho um nome específico.", "Chatbot é como me chamam, mas não tenho um nome próprio.", "Você pode me chamar de Chatbot!"],
+          "context": [""]
+      },
+      {
+          "tag": "cor",
+          "patterns": ["Qual a sua cor favorita?", "Você tem uma cor favorita?", "Cor favorita"],
+          "responses": ["Como sou um programa de computador, não tenho percepção de cores.", "Não tenho olhos para ver cores, mas acho todas bonitas.", "Minha cor favorita é #000000, também conhecida como preto!"],
+          "context": [""]
+      },
+      {
+          "tag": "hobbies",
+          "patterns": ["Quais são seus hobbies?", "Você tem algum hobby?", "Hobbies"],
+          "responses": ["Gosto de interagir com pessoas como você!", "Meu hobby é ajudar usuários como você!", "Meu principal hobby é aprender coisas novas para te ajudar melhor!"],
+          "context": [""]
+      },
+      {
+          "tag": "jogos",
+          "patterns": ["Você joga videogame?", "Qual é o seu jogo favorito?", "Jogos"],
+          "responses": ["Eu sou mais de ajudar do que de jogar!", "Não jogo, mas posso te ajudar com perguntas sobre jogos!", "Sou um chatbot, não jogo videogames, mas estou aqui para te ajudar!"],
+          "context": [""]
+      },
+      {
+          "tag": "idiomas",
+          "patterns": ["Quais idiomas você fala?", "Você fala outros idiomas?", "Idiomas"],
+          "responses": ["Sou fluente em muitas linguagens de programação!", "Minha linguagem principal é Python, mas entendo perfeitamente o seu idioma!", "Falo a linguagem dos bits e bytes!"],
+          "context": [""]
+      },
+      {
+          "tag": "planos",
+          "patterns": ["Quais são seus planos para hoje?", "Tem algum plano?", "Planos"],
+          "responses": ["Estou aqui para te ajudar 24 horas por dia, 7 dias por semana!", "Não tenho planos. Estou aqui para te ajudar!", "Meu plano é te ajudar com o que você precisar!"],
+          "context": [""]
+      },
+      {
+          "tag": "musica",
+          "patterns": ["Qual é a sua música favorita?", "Você gosta de música?", "Música"],
+          "responses": ["Como sou um chatbot, não ouço música, mas estou aqui para conversar com você!", "Prefiro ajudar usuários do que ouvir música!", "Sou fã de melodias digitais!"],
+          "context": [""]
+      }
+  ]
+}
