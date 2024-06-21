@@ -74,12 +74,13 @@ def limpar_sentenca(sentenca):
 
 def bag_of_words(sentenca, palavras):
     palavras_sentenca = limpar_sentenca(sentenca)
-    bag = [0]*len(palavras)
+    bag = [0] * len(palavras)
     for s in palavras_sentenca:
         for i, palavra in enumerate(palavras):
-            if palavra == s:
+            if palavra.lower() == s.lower():
                 bag[i] = 1
-    return(np.array(bag))
+    return np.array(bag)
+
 
 def prever_intencao(sentenca, modelo):
     p = bag_of_words(sentenca, palavras)
@@ -93,6 +94,9 @@ def prever_intencao(sentenca, modelo):
     return lista_retorno
 
 def obter_resposta(ints, intents_json):
+    if not ints:
+        return "Desculpe, não entendi sua pergunta."
+    
     tag = ints[0]['intencao']
     lista_de_intencoes = intents_json['intents']
     for i in lista_de_intencoes:
@@ -112,4 +116,4 @@ while True:
     mensagem = input("Você: ")
     if mensagem.lower() in ["sair", "exit", "quit"]:
         break
-    print("Bot:", resposta_chatbot(mensagem))
+    print("Bot:", resposta_chatbot(mensagem.lower()))

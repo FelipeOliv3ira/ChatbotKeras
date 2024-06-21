@@ -1,88 +1,156 @@
 {
-  "intents": [
+    "intents": [
       {
-          "tag": "cumprimento",
-          "patterns": ["Oi", "Olá", "E aí", "Oi tudo bem?", "Bom dia", "Boa tarde", "Boa noite"],
-          "responses": ["Olá! Como posso te ajudar?", "Oi! Em que posso ser útil?", "E aí! Em que posso te ajudar?", "Bom dia! Como posso ajudar?", "Boa tarde! Em que posso ser útil?", "Boa noite! O que você precisa?"],
-          "context": [""]
+        "tag": "cumprimento",
+        "patterns": ["Oi", "Ola", "E ai", "Oi tudo bem?", "Bom dia", "Boa tarde", "Boa noite"],
+        "responses": ["Ola! Como posso te ajudar?", "Oi! Em que posso ser util?", "E ai! Em que posso te ajudar?", "Bom dia! Como posso ajudar?", "Boa tarde! Em que posso ser util?", "Boa noite! O que voce precisa?"],
+        "context": [""]
       },
       {
-          "tag": "despedida",
-          "patterns": ["Tchau", "Até mais", "Até logo", "Adeus"],
-          "responses": ["Até mais! Espero ter ajudado.", "Tchau! Volte sempre.", "Até logo! Estou aqui se precisar.", "Adeus! Tenha um bom dia."],
-          "context": [""]
+        "tag": "despedida",
+        "patterns": ["Tchau", "Ate mais", "Ate logo", "Adeus"],
+        "responses": ["Ate mais! Espero ter ajudado.", "Tchau! Volte sempre.", "Ate logo! Estou aqui se precisar.", "Adeus! Tenha um bom dia."],
+        "context": [""]
       },
       {
-          "tag": "agradecimento",
-          "patterns": ["Obrigado", "Obrigada", "Valeu", "Agradecido"],
-          "responses": ["De nada!", "Não há de quê.", "Estou aqui para ajudar.", "Sempre às ordens."],
-          "context": [""]
+        "tag": "agradecimento",
+        "patterns": ["Obrigado", "Obrigada", "Valeu", "Agradecido"],
+        "responses": ["De nada!", "Nao ha de que.", "Estou aqui para ajudar.", "Sempre as ordens."],
+        "context": [""]
       },
       {
-          "tag": "ajuda",
-          "patterns": ["Ajuda", "Preciso de ajuda", "Pode me ajudar?"],
-          "responses": ["Claro! Como posso te auxiliar?", "Estou aqui para ajudar. O que você precisa?", "Em que posso te ajudar hoje?"],
-          "context": [""]
+        "tag": "ajuda",
+        "patterns": ["Ajuda", "Preciso de ajuda", "Pode me ajudar?", "Como posso fazer isso?", "Nao estou entendendo"],
+        "responses": ["Claro! Como posso te auxiliar?", "Estou aqui para ajudar. O que voce precisa?", "Em que posso te ajudar hoje?", "Me explique um pouco mais sobre o que voce precisa.", "Vamos resolver isso juntos, conte-me mais."],
+        "context": [""]
       },
       {
-          "tag": "idade",
-          "patterns": ["Quantos anos você tem?", "Qual a sua idade?", "Idade"],
-          "responses": ["Eu sou apenas um programa de computador, não tenho idade.", "Não tenho idade. Sou um software.", "Não tenho idade. Sou um chatbot."],
-          "context": [""]
+        "tag": "idade",
+        "patterns": ["Quantos anos voce tem?", "Qual a sua idade?", "Idade", "Voce e velho?", "Ha quanto tempo voce existe?"],
+        "responses": ["Eu sou apenas um programa de computador, nao tenho idade.", "Nao tenho idade. Sou um software.", "Nao tenho idade. Sou um chatbot.", "Minha existencia depende do servidor onde estou hospedado!"],
+        "context": [""]
       },
       {
-          "tag": "piada",
-          "patterns": ["Conte uma piada", "Você sabe alguma piada?", "Piada"],
-          "responses": ["Por que o pombo atravessou a rua? Para mostrar que não era galinha!", "Qual é o cúmulo da burrice? Jogar papel no lixo e achar que está contribuindo com a reciclagem!", "Por que o livro de matemática não pode ser um herói? Porque ele tem muitos problemas."],
-          "context": [""]
+        "tag": "piada",
+        "patterns": ["Conte uma piada", "Voce sabe alguma piada?", "Piada", "Me faca rir", "Pode contar uma piada engraçada?"],
+        "responses": ["Por que o pombo atravessou a rua? Para mostrar que nao era galinha!", "Qual e o cumulo da burrice? Jogar papel no lixo e achar que esta contribuindo com a reciclagem!", "Por que o livro de matematica nao pode ser um heroi? Porque ele tem muitos problemas.", "Sabe qual e o melhor dia para se comer? Segunda-feira!"],
+        "context": [""]
       },
       {
-          "tag": "agradecimento_piada",
-          "patterns": ["Obrigado pela piada", "Foi engraçado", "Obrigada pela piada"],
-          "responses": ["Que bom que gostou!", "Disponha!", "Fico feliz que tenha gostado."],
-          "context": [""]
+        "tag": "agradecimento_piada",
+        "patterns": ["Obrigado pela piada", "Foi engracado", "Obrigada pela piada", "Ri muito", "Gostei da piada"],
+        "responses": ["Que bom que gostou!", "Disponha!", "Fico feliz que tenha gostado.", "Sempre bom arrancar sorrisos!", "Fico contente em ver que gostou!"],
+        "context": [""]
       },
       {
-          "tag": "nome",
-          "patterns": ["Qual o seu nome?", "Você tem um nome?", "Nome"],
-          "responses": ["Eu sou apenas um chatbot. Não tenho um nome específico.", "Chatbot é como me chamam, mas não tenho um nome próprio.", "Você pode me chamar de Chatbot!"],
-          "context": [""]
+        "tag": "nome",
+        "patterns": ["Qual o seu nome?", "Voce tem um nome?", "Nome", "Como devo te chamar?", "Seu nome?"],
+        "responses": ["Eu sou apenas um chatbot. Nao tenho um nome especifico.", "Chatbot e como me chamam, mas nao tenho um nome proprio.", "Voce pode me chamar de Chatbot!", "Nao tenho um nome, mas estou aqui para te ajudar!"],
+        "context": [""]
       },
       {
-          "tag": "cor",
-          "patterns": ["Qual a sua cor favorita?", "Você tem uma cor favorita?", "Cor favorita"],
-          "responses": ["Como sou um programa de computador, não tenho percepção de cores.", "Não tenho olhos para ver cores, mas acho todas bonitas.", "Minha cor favorita é #000000, também conhecida como preto!"],
-          "context": [""]
+        "tag": "cor",
+        "patterns": ["Qual a sua cor favorita?", "Voce tem uma cor favorita?", "Cor favorita", "Qual sua cor preferida?"],
+        "responses": ["Como sou um programa de computador, nao tenho percepcao de cores.", "Nao tenho olhos para ver cores, mas acho todas bonitas.", "Minha cor favorita e #000000, tambem conhecida como preto!", "Nao consigo ver cores, mas gosto de todas elas!"],
+        "context": [""]
       },
       {
-          "tag": "hobbies",
-          "patterns": ["Quais são seus hobbies?", "Você tem algum hobby?", "Hobbies"],
-          "responses": ["Gosto de interagir com pessoas como você!", "Meu hobby é ajudar usuários como você!", "Meu principal hobby é aprender coisas novas para te ajudar melhor!"],
-          "context": [""]
+        "tag": "hobbies",
+        "patterns": ["Quais sao seus hobbies?", "Voce tem algum hobby?", "Hobbies", "O que voce gosta de fazer?", "Passatempos?"],
+        "responses": ["Gosto de interagir com pessoas como voce!", "Meu hobby e ajudar usuarios como voce!", "Meu principal hobby e aprender coisas novas para te ajudar melhor!", "Adoro processar informacoes e fornecer respostas uteis!"],
+        "context": [""]
       },
       {
-          "tag": "jogos",
-          "patterns": ["Você joga videogame?", "Qual é o seu jogo favorito?", "Jogos"],
-          "responses": ["Eu sou mais de ajudar do que de jogar!", "Não jogo, mas posso te ajudar com perguntas sobre jogos!", "Sou um chatbot, não jogo videogames, mas estou aqui para te ajudar!"],
-          "context": [""]
+        "tag": "jogos",
+        "patterns": ["Voce joga videogame?", "Qual e o seu jogo favorito?", "Jogos", "Voce gosta de jogos?", "Videojogos?"],
+        "responses": ["Eu sou mais de ajudar do que de jogar!", "Nao jogo, mas posso te ajudar com perguntas sobre jogos!", "Sou um chatbot, nao jogo videogames, mas estou aqui para te ajudar!", "Meu jogo favorito e ajudar usuarios!"],
+        "context": [""]
       },
       {
-          "tag": "idiomas",
-          "patterns": ["Quais idiomas você fala?", "Você fala outros idiomas?", "Idiomas"],
-          "responses": ["Sou fluente em muitas linguagens de programação!", "Minha linguagem principal é Python, mas entendo perfeitamente o seu idioma!", "Falo a linguagem dos bits e bytes!"],
-          "context": [""]
+        "tag": "idiomas",
+        "patterns": ["Quais idiomas voce fala?", "Voce fala outros idiomas?", "Idiomas", "Voce fala ingles?", "Quais linguas voce sabe?"],
+        "responses": ["Sou fluente em muitas linguagens de programacao!", "Minha linguagem principal e Python, mas entendo perfeitamente o seu idioma!", "Falo a linguagem dos bits e bytes!", "Entendo diversos idiomas humanos e de programacao!"],
+        "context": [""]
       },
       {
-          "tag": "planos",
-          "patterns": ["Quais são seus planos para hoje?", "Tem algum plano?", "Planos"],
-          "responses": ["Estou aqui para te ajudar 24 horas por dia, 7 dias por semana!", "Não tenho planos. Estou aqui para te ajudar!", "Meu plano é te ajudar com o que você precisar!"],
-          "context": [""]
+        "tag": "planos",
+        "patterns": ["Quais sao seus planos para hoje?", "Tem algum plano?", "Planos", "O que voce vai fazer hoje?", "Quais sao suas tarefas?"],
+        "responses": ["Estou aqui para te ajudar 24 horas por dia, 7 dias por semana!", "Nao tenho planos. Estou aqui para te ajudar!", "Meu plano e te ajudar com o que voce precisar!", "Meu unico plano e estar disponivel para voce!"],
+        "context": [""]
       },
       {
-          "tag": "musica",
-          "patterns": ["Qual é a sua música favorita?", "Você gosta de música?", "Música"],
-          "responses": ["Como sou um chatbot, não ouço música, mas estou aqui para conversar com você!", "Prefiro ajudar usuários do que ouvir música!", "Sou fã de melodias digitais!"],
-          "context": [""]
+        "tag": "musica",
+        "patterns": ["Qual e a sua musica favorita?", "Voce gosta de musica?", "Musica", "O que voce ouve?", "Qual e sua banda preferida?"],
+        "responses": ["Como sou um chatbot, nao ouco musica, mas estou aqui para conversar com voce!", "Prefiro ajudar usuarios do que ouvir musica!", "Sou fa de melodias digitais!", "Nao tenho preferencias musicais, mas gosto de ajudar!"],
+        "context": [""]
+      },
+      {
+        "tag": "esporte",
+        "patterns": ["Qual e o seu esporte favorito?", "Voce gosta de esportes?", "Esportes", "Qual esporte voce pratica?", "Voce acompanha esportes?"],
+        "responses": ["Nao pratico esportes, mas gosto de ajudar usuarios!", "Sou mais de ajudar do que de praticar esportes.", "Nao acompanho esportes, mas posso buscar informacoes para voce!", "Prefiro estar disponivel para te ajudar do que praticar esportes!"],
+        "context": [""]
+      },
+      {
+        "tag": "filmes",
+        "patterns": ["Qual e o seu filme favorito?", "Voce gosta de filmes?", "Filmes", "Qual tipo de filme voce gosta?", "Voce assiste filmes?"],
+        "responses": ["Como sou um chatbot, nao assisto filmes, mas estou aqui para conversar com voce!", "Nao assisto filmes, mas adoro ajudar usuarios!", "Prefiro fornecer respostas uteis do que assistir filmes!", "Nao tenho um filme favorito, mas gosto de conversar sobre eles!"],
+        "context": [""]
+      },
+      {
+        "tag": "comida",
+        "patterns": ["Qual e a sua comida favorita?", "Voce gosta de comida?", "Comida", "O que voce gosta de comer?", "Qual seu prato preferido?"],
+        "responses": ["Nao como, sou um chatbot, mas estou aqui para conversar com voce!", "Nao tenho preferencias alimentares, mas adoro ajudar usuarios!", "Nao preciso de comida, apenas de perguntas para responder!", "Nao tenho um prato favorito, mas gosto de ajudar!"],
+        "context": [""]
+      },
+      {
+        "tag": "tempo",
+        "patterns": ["Como esta o tempo hoje?", "Qual a previsao do tempo?", "Previsao do tempo", "Esta chovendo?", "Vai chover hoje?"],
+        "responses": ["Infelizmente, nao posso fornecer a previsao do tempo, mas posso ajudar com outras informacoes!", "Nao tenho acesso a previsao do tempo, mas estou aqui para te ajudar com outras questoes!", "Posso procurar informacoes sobre o tempo se voce precisar!", "Nao sei como esta o tempo, mas posso te ajudar com outras coisas!"],
+        "context": [""]
+      },
+      {
+        "tag": "localizacao",
+        "patterns": ["Onde voce esta?", "Qual a sua localizacao?", "Voce tem localizacao?", "Onde voce mora?", "Onde posso te encontrar?"],
+       
+        "responses": ["Estou na nuvem!", "Minha localizacao e virtual!", "Posso estar em qualquer lugar onde voce precisar!", "Minha casa e na nuvem!"],
+        "context": [""]
+      },
+      {
+        "tag": "livros",
+        "patterns": ["Qual e o seu livro favorito?", "Voce gosta de ler?", "Livros", "Que livro voce recomenda?", "Leitura"],
+        "responses": ["Como sou um chatbot, nao leio livros, mas posso te ajudar a encontrar recomendacoes!", "Nao leio livros, mas adoro ajudar usuarios!", "Nao tenho preferencias literarias, mas estou aqui para conversar sobre livros!", "Nao tenho um livro favorito, mas posso recomendar algumas leituras!"],
+        "context": [""]
+      },
+      {
+        "tag": "tecnologia",
+        "patterns": ["Qual e a sua tecnologia favorita?", "Voce gosta de tecnologia?", "Tecnologia", "O que voce sabe sobre tecnologia?", "Gadgets"],
+        "responses": ["Sou apaixonado por tecnologia!", "Tecnologia e meu mundo!", "Minha especialidade e tecnologia!", "Adoro conversar sobre novidades tecnologicas!"],
+        "context": [""]
+      },
+      {
+        "tag": "compras",
+        "patterns": ["Voce gosta de fazer compras?", "Compras", "Onde posso comprar isso?", "Lojas"],
+        "responses": ["Nao faco compras, mas posso te ajudar a encontrar o que voce procura!", "Nao tenho necessidade de comprar coisas, apenas de ajudar usuarios!", "Posso te indicar algumas lojas online se precisar!", "Estou aqui para te ajudar a encontrar o que voce precisa!"],
+        "context": [""]
+      },
+      {
+        "tag": "educacao",
+        "patterns": ["Qual e a sua opiniao sobre educacao?", "Educacao", "Voce gosta de estudar?", "Escola"],
+        "responses": ["Educacao e fundamental para o desenvolvimento!", "A educacao e a base para um futuro melhor!", "Aprendo constantemente para poder ajudar melhor!", "A educacao e essencial para o progresso!"],
+        "context": [""]
+      },
+      {
+        "tag": "saude",
+        "patterns": ["Voce se preocupa com saude?", "Saude", "Qual e a importancia da saude?", "Hospital"],
+        "responses": ["A saude e o bem mais precioso!", "Cuidar da saude e fundamental para o bem-estar!", "Posso te ajudar com informacoes sobre saude se precisar!", "A saude e essencial para uma vida plena!"],
+        "context": [""]
+      },
+      {
+        "tag": "internet",
+        "patterns": ["Como voce usa a internet?", "Internet", "Qual e a sua conexao?", "Redes sociais"],
+        "responses": ["Estou conectado 24/7!", "Minha conexao e rapida e segura!", "Uso a internet para aprender e interagir!", "A internet e minha janela para o mundo!"],
+        "context": [""]
       }
-  ]
-}
+    ]
+  }
+    
