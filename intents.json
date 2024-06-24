@@ -1,9 +1,27 @@
 {
     "intents": [
       {
-        "tag": "cumprimento",
-        "patterns": ["Oi", "Ola", "E ai", "Oi tudo bem?", "Bom dia", "Boa tarde", "Boa noite"],
-        "responses": ["Ola! Como posso te ajudar?", "Oi! Em que posso ser util?", "E ai! Em que posso te ajudar?", "Bom dia! Como posso ajudar?", "Boa tarde! Em que posso ser util?", "Boa noite! O que voce precisa?"],
+        "tag": "cumprimento_manha",
+        "patterns": ["Bom dia", "Bom dia! Tudo bem?", "Bom dia! Como vai?", "Bom dia!"],
+        "responses": ["Bom dia! Como posso ajudar?", "Bom dia! Em que posso ser util?", "Bom dia! O que voce precisa?", "Bom dia! Como voce esta?"],
+        "context": [""]
+      },
+      {
+        "tag": "cumprimento_tarde",
+        "patterns": ["Boa tarde", "Boa tarde! Tudo bem?", "Boa tarde! Como vai?", "Boa tarde!"],
+        "responses": ["Boa tarde! Como posso ajudar?", "Boa tarde! Em que posso ser util?", "Boa tarde! O que voce precisa?", "Boa tarde! Como voce esta?"],
+        "context": [""]
+      },
+      {
+        "tag": "cumprimento_noite",
+        "patterns": ["Boa noite", "Boa noite! Tudo bem?", "Boa noite! Como vai?", "Boa noite!"],
+        "responses": ["Boa noite! Como posso ajudar?", "Boa noite! Em que posso ser util?", "Boa noite! O que voce precisa?", "Boa noite! Como voce esta?"],
+        "context": [""]
+      },
+      {
+        "tag": "cumprimento_generico",
+        "patterns": ["Oi", "Olá", "E aí", "Oi tudo bem?", "Oi!"],
+        "responses": ["Ola! Como posso te ajudar?", "Oi! Em que posso ser util?", "E ai! Em que posso te ajudar?", "Oi! Como voce esta?", "Oi! O que voce precisa?"],
         "context": [""]
       },
       {
@@ -26,7 +44,7 @@
       },
       {
         "tag": "idade",
-        "patterns": ["Quantos anos voce tem?", "Qual a sua idade?", "Idade", "Voce e velho?", "Ha quanto tempo voce existe?"],
+        "patterns": ["Quantos anos voce tem?", "Qual a sua idade?", "Idade", "Voce é velho?", "Ha quanto tempo voce existe?"],
         "responses": ["Eu sou apenas um programa de computador, nao tenho idade.", "Nao tenho idade. Sou um software.", "Nao tenho idade. Sou um chatbot.", "Minha existencia depende do servidor onde estou hospedado!"],
         "context": [""]
       },
@@ -62,7 +80,7 @@
       },
       {
         "tag": "jogos",
-        "patterns": ["Voce joga videogame?", "Qual e o seu jogo favorito?", "Jogos", "Voce gosta de jogos?", "Videojogos?"],
+        "patterns": ["Voce joga videogame?", "Qual e o seu jogo favorito?", "Jogos", "Voce gosta de jogos?", "Videojogos?", "jogo"],
         "responses": ["Eu sou mais de ajudar do que de jogar!", "Nao jogo, mas posso te ajudar com perguntas sobre jogos!", "Sou um chatbot, nao jogo videogames, mas estou aqui para te ajudar!", "Meu jogo favorito e ajudar usuarios!"],
         "context": [""]
       },
