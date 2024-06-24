@@ -72,6 +72,7 @@ def limpar_sentenca(sentenca):
     palavras_sentenca = nltk.word_tokenize(sentenca)
     return palavras_sentenca
 
+# Processamento do input do usuário
 def bag_of_words(sentenca, palavras):
     palavras_sentenca = limpar_sentenca(sentenca)
     bag = [0] * len(palavras)
@@ -80,7 +81,6 @@ def bag_of_words(sentenca, palavras):
             if palavra.lower() == s.lower():
                 bag[i] = 1
     return np.array(bag)
-
 
 def prever_intencao(sentenca, modelo):
     p = bag_of_words(sentenca, palavras)
@@ -114,6 +114,6 @@ def resposta_chatbot(texto):
 print("Inicie a conversa com o bot (digite 'sair' para encerrar)")
 while True:
     mensagem = input("Você: ")
-    if mensagem.lower() in ["sair", "exit", "quit"]:
+    if mensagem.lower() in ["sair"]:
         break
     print("Bot:", resposta_chatbot(mensagem.lower()))
